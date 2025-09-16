@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  background-color: #0A0A0A;
+  color: #ddd;
+  font-family: Noto Sans JP;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="f"><feTurbulence baseFrequency="0.8" numOctaves="2" /></filter><rect width="100%" height="100%" filter="url(%23f)" /></svg>');
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 0;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+}
+
+.header {
+  padding-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header__nav_link {
+  margin-right: 20px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 540px) {
+  .header__nav {
+    justify-content: space-around;
+  }
+  .header__nav_link {
+    margin-right: 0;
+  }
+}
+.footer {
+  background-color: #262525;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__logo_img {
+  width: 200px;
+}
+.footer__logo_title {
+  margin-top: 10px;
+  color: #c6c6c6;
+  font-size: 15px;
+}
+.footer__link__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.footer__link__box_txt {
+  font-size: 15px;
+  color: c6c6c6;
+}
+.footer__link i {
+  font-size: 40px;
+  margin-left: 30px;
+  color: #bbbaba;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer__logo_img {
+    width: 100px;
+  }
+  .footer__logo_title {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .footer__link__box {
+    margin-bottom: 10px;
+  }
+  .footer__link__box_txt {
+    font-size: 13px;
+  }
+  .footer__link i {
+    font-size: 30px;
+    margin-left: 7px;
+  }
+}/*# sourceMappingURL=base.css.map */
