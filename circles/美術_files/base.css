@@ -16,7 +16,13 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
+h5 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 img {
   user-drag: none;
   -webkit-user-drag: none;
