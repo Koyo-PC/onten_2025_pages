@@ -144,7 +144,7 @@ h5 {
 }
 
 .circles__container__block__link_logo {
-    width: 60%;
+    width: 55%;
     object-fit: contain;
     margin-bottom: 15px;
     transition: filter 0.3s ease;
